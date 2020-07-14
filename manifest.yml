@@ -1,7 +1,7 @@
 ---
 applications:
 - name: pal-tracker
-  memory: 1G
+  memory: 1G 
   random-route: true
   path: build/libs/pal-tracker.jar
   routes:
