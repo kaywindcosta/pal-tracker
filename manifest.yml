@@ -4,3 +4,6 @@ applications:
     memory: 1G
     random-route: true
     path: build/libs/pal-tracker.jar
+    env:
+      WELCOME_MESSAGE: Hello from Cloud Foundry
+      JBP_CONFIG_OPEN_JDK_JRE: '{ jre: { version: 11.+ } }'
