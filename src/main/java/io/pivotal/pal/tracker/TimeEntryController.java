@@ -34,7 +34,6 @@ public class TimeEntryController {
     }
     @PutMapping("/time-entries/{id}")
     public ResponseEntity<TimeEntry> update(@PathVariable long id, @RequestBody TimeEntry timeEntry) {
-
         TimeEntry result =timeEntryRepository.update(id, timeEntry);
         if(null!= result) {
             return new ResponseEntity<TimeEntry>(result, HttpStatus.OK);
